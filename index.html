@@ -178,6 +178,32 @@ footer{background:#0c0d0f;color:#b9bdc3;padding:32px 0}
 .all-project-photo:hover img{transform:scale(1.035)}
 @media(max-width:900px){.project-labels{grid-template-columns:1fr}.all-project-gallery{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.all-project-gallery{grid-template-columns:1fr}.all-project-photo{height:240px}}
+
+/* Responsive live hero */
+.hero.hero-live{min-height:610px;background:
+linear-gradient(90deg,rgba(5,6,8,.94) 0%,rgba(5,6,8,.78) 42%,rgba(5,6,8,.18) 72%,rgba(5,6,8,.08) 100%),
+url('aytek-hero.jpg') center center/cover no-repeat}
+.hero.hero-live:after{display:block}
+.hero.hero-live>.container{position:relative;z-index:2;width:min(1180px,92%)}
+.hero.hero-live .hero-content{max-width:690px;padding:80px 0}
+.hero.hero-live .experience-badge{right:0;top:45px}
+@media(max-width:1050px){.hero.hero-live .experience-badge{right:0;top:24px}}
+@media(max-width:700px){
+ .hero.hero-live{min-height:650px;background-position:62% center}
+ .hero.hero-live:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,6,8,.95) 0%,rgba(5,6,8,.82) 62%,rgba(5,6,8,.32) 100%);z-index:1}
+ .hero.hero-live .hero-content{padding:70px 0 55px;max-width:100%}
+ .hero.hero-live h1{font-size:42px;line-height:1.02}
+ .hero.hero-live p{font-size:16px;max-width:92%}
+ .hero.hero-live .hero-actions{display:grid;grid-template-columns:1fr;max-width:330px}
+ .hero.hero-live .experience-badge{position:absolute;right:0;top:20px;width:100px;height:100px}
+ .hero.hero-live .experience-badge b{font-size:36px}
+ .hero.hero-live .experience-badge span{font-size:10px}
+}
+@media(max-width:430px){
+ .hero.hero-live{min-height:620px;background-position:66% center}
+ .hero.hero-live h1{font-size:36px}
+ .hero.hero-live .kicker{padding-right:95px;font-size:10px;letter-spacing:1px}
+}
 </style>
 </head>
 <body>
@@ -192,7 +218,20 @@ footer{background:#0c0d0f;color:#b9bdc3;padding:32px 0}
 </header>
 
 <main id="anasayfa">
-<section class="hero hero-image-only" aria-label="AYTEK ELEKTRİK - Enerjinin olduğu yerde AYTEK var"></section>
+<section class="hero hero-live" id="anasayfa">
+ <div class="container">
+  <div class="hero-content">
+   <div class="kicker"><i></i>Sivas'ta güçlü çözüm ortağınız</div>
+   <h1>Enerjinin olduğu yerde<br><strong>AYTEK ELEKTRİK</strong> var.</h1>
+   <p>50 yıllık tecrübemizle, elektrik taahhüt, proje ve uygulama alanlarında güvenilir, düzenli ve profesyonel çözümler sunuyoruz.</p>
+   <div class="hero-actions">
+    <a class="btn btn-red" href="#teklif">Projeniz İçin Teklif Alın →</a>
+    <a class="btn outline" href="#hizmetler">Hizmetlerimizi İnceleyin →</a>
+   </div>
+  </div>
+  <div class="experience-badge"><b>50</b><span>YILLIK<br>TECRÜBE</span></div>
+ </div>
+</section>
 
 <section class="stats">
  <div class="container stats-grid">
