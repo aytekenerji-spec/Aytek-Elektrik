@@ -150,6 +150,15 @@ footer{background:#0c0d0f;color:#b9bdc3;padding:32px 0}
 .experience-badge span{font-size:13px;font-weight:900;letter-spacing:2px;margin-top:8px}
 @media(max-width:1050px){.experience-badge{right:10px;top:30px;width:135px;height:135px}.experience-badge b{font-size:48px}}
 @media(max-width:700px){.experience-badge{position:static;margin-top:28px;width:120px;height:120px}.experience-badge b{font-size:42px}.nav{height:82px}.logo{height:58px}}
+
+.hero-image-only{min-height:0;height:auto;aspect-ratio:16/6.25;background:url('aytek-hero.jpg') center center/cover no-repeat}
+.hero-image-only:after{display:none}
+.project-photo{cursor:zoom-in}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:1000;display:none;align-items:center;justify-content:center;padding:24px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:min(1200px,94vw);max-height:90vh;object-fit:contain;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.lightbox-close{position:absolute;right:24px;top:18px;border:0;background:transparent;color:#fff;font-size:42px;line-height:1;cursor:pointer}
+@media(max-width:700px){.hero-image-only{aspect-ratio:auto;height:430px;background-position:center center}}
 </style>
 </head>
 <body>
@@ -164,16 +173,7 @@ footer{background:#0c0d0f;color:#b9bdc3;padding:32px 0}
 </header>
 
 <main id="anasayfa">
-<section class="hero">
- <div class="container hero-content">
-  <div class="kicker"><i></i> AYTEK ELEKTRİK</div>
-  <h1>Enerjinin olduğu yerde<br><strong>AYTEK</strong> var.</h1><p><strong style="color:#fff">50 yıllık tecrübemizle</strong>, elektrik taahhüt, proje ve uygulama alanlarında güvenilir, düzenli ve profesyonel çözümler sunuyoruz.</p><div class="experience-badge"><b>50</b><span>YILLIK<br>TECRÜBE</span></div>
-  <div class="hero-actions">
-   <a class="btn btn-red" href="#iletisim">Projeniz İçin Teklif Alın</a>
-   <a class="btn outline" href="#hizmetler">Hizmetlerimizi İnceleyin</a>
-  </div>
- </div>
-</section>
+<section class="hero hero-image-only" aria-label="AYTEK ELEKTRİK - Enerjinin olduğu yerde AYTEK var"></section>
 
 <section class="stats">
  <div class="container stats-grid">
@@ -223,19 +223,19 @@ footer{background:#0c0d0f;color:#b9bdc3;padding:32px 0}
   <div class="section-head"><div class="eyebrow">Referanslarımız</div><h2>Referans Projelerimiz</h2><p style="color:#b9bdc3">AYTEK ELEKTRİK'in uygulama sürecinden seçilmiş proje görüntüleri.</p></div>
   <div class="reference-grid">
    <article class="reference-card">
-    <a class="reference-cover" href="WhatsApp%20Image%202026-09-28%20at%2021.55.25.jpeg" target="_blank"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.55.25.jpeg" alt="Sivas Numune Hastanesi İdari Bina"></a>
+    <a class="reference-cover project-photo" href="WhatsApp%20Image%202026-09-28%20at%2021.55.25.jpeg"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.55.25.jpeg" alt="Sivas Numune Hastanesi İdari Bina"></a>
     <div class="reference-info"><small>Sivas / İdari Bina</small><h3>Sivas Numune Hastanesi – İdari Bina</h3><p>Elektrik uygulama sürecinden saha görüntüleri.</p></div>
-    <div class="gallery"><a href="WhatsApp%20Image%202026-09-28%20at%2021.55.25.jpeg" target="_blank" aria-label="Sivas Numune Hastanesi İdari Bina 1"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.55.25.jpeg" alt="Sivas Numune Hastanesi İdari Bina 1"></a><a href="WhatsApp%20Image%202026-09-28%20at%2021.57.33.jpeg" target="_blank" aria-label="Sivas Numune Hastanesi İdari Bina 2"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.57.33.jpeg" alt="Sivas Numune Hastanesi İdari Bina 2"></a><a href="WhatsApp%20Image%202026-09-28%20at%2021.58.54%20(1).jpeg" target="_blank" aria-label="Sivas Numune Hastanesi İdari Bina 3"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.54%20(1).jpeg" alt="Sivas Numune Hastanesi İdari Bina 3"></a><a href="WhatsApp%20Image%202026-09-28%20at%2021.58.54%20(2).jpeg" target="_blank" aria-label="Sivas Numune Hastanesi İdari Bina 4"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.54%20(2).jpeg" alt="Sivas Numune Hastanesi İdari Bina 4"></a><a href="WhatsApp%20Image%202026-09-28%20at%2021.58.54%20(3).jpeg" target="_blank" aria-label="Sivas Numune Hastanesi İdari Bina 5"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.54%20(3).jpeg" alt="Sivas Numune Hastanesi İdari Bina 5"></a><a href="WhatsApp%20Image%202026-09-28%20at%2021.58.54.jpeg" target="_blank" aria-label="Sivas Numune Hastanesi İdari Bina 6"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.54.jpeg" alt="Sivas Numune Hastanesi İdari Bina 6"></a><a href="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(1).jpeg" target="_blank" aria-label="Sivas Numune Hastanesi İdari Bina 7"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(1).jpeg" alt="Sivas Numune Hastanesi İdari Bina 7"></a><a href="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(2).jpeg" target="_blank" aria-label="Sivas Numune Hastanesi İdari Bina 8"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(2).jpeg" alt="Sivas Numune Hastanesi İdari Bina 8"></a><a href="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(4).jpeg" target="_blank" aria-label="Sivas Numune Hastanesi İdari Bina 9"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(4).jpeg" alt="Sivas Numune Hastanesi İdari Bina 9"></a></div>
+    <div class="gallery"><a class="project-photo" href="WhatsApp%20Image%202026-09-28%20at%2021.55.25.jpeg" aria-label="Sivas Numune Hastanesi İdari Bina 1"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.55.25.jpeg" alt="Sivas Numune Hastanesi İdari Bina 1"></a><a class="project-photo" href="WhatsApp%20Image%202026-09-28%20at%2021.57.33.jpeg" aria-label="Sivas Numune Hastanesi İdari Bina 2"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.57.33.jpeg" alt="Sivas Numune Hastanesi İdari Bina 2"></a><a class="project-photo" href="WhatsApp%20Image%202026-09-28%20at%2021.58.54%20(1).jpeg" aria-label="Sivas Numune Hastanesi İdari Bina 3"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.54%20(1).jpeg" alt="Sivas Numune Hastanesi İdari Bina 3"></a><a class="project-photo" href="WhatsApp%20Image%202026-09-28%20at%2021.58.54%20(2).jpeg" aria-label="Sivas Numune Hastanesi İdari Bina 4"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.54%20(2).jpeg" alt="Sivas Numune Hastanesi İdari Bina 4"></a><a class="project-photo" href="WhatsApp%20Image%202026-09-28%20at%2021.58.54%20(3).jpeg" aria-label="Sivas Numune Hastanesi İdari Bina 5"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.54%20(3).jpeg" alt="Sivas Numune Hastanesi İdari Bina 5"></a><a class="project-photo" href="WhatsApp%20Image%202026-09-28%20at%2021.58.54.jpeg" aria-label="Sivas Numune Hastanesi İdari Bina 6"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.54.jpeg" alt="Sivas Numune Hastanesi İdari Bina 6"></a><a class="project-photo" href="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(1).jpeg" aria-label="Sivas Numune Hastanesi İdari Bina 7"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(1).jpeg" alt="Sivas Numune Hastanesi İdari Bina 7"></a><a class="project-photo" href="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(2).jpeg" aria-label="Sivas Numune Hastanesi İdari Bina 8"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(2).jpeg" alt="Sivas Numune Hastanesi İdari Bina 8"></a><a class="project-photo" href="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(4).jpeg" aria-label="Sivas Numune Hastanesi İdari Bina 9"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(4).jpeg" alt="Sivas Numune Hastanesi İdari Bina 9"></a></div>
    </article>
    <article class="reference-card">
-    <a class="reference-cover" href="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(2).jpeg" target="_blank"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(2).jpeg" alt="Tarım Kredi Kooperatifleri Sivas Bölge Birliği Müdürlüğü"></a>
+    <a class="reference-cover project-photo" href="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(2).jpeg"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(2).jpeg" alt="Tarım Kredi Kooperatifleri Sivas Bölge Birliği Müdürlüğü"></a>
     <div class="reference-info"><small>Sivas / Kurumsal</small><h3>Tarım Kredi Kooperatifleri – Sivas Bölge Birliği Müdürlüğü</h3><p>Proje uygulama sürecinden görüntü.</p></div>
-    <div class="gallery"><a href="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(2).jpeg" target="_blank" aria-label="Tarım Kredi Sivas Bölge Birliği Müdürlüğü 1"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(2).jpeg" alt="Tarım Kredi Sivas Bölge Birliği Müdürlüğü 1"></a></div>
+    <div class="gallery"><a class="project-photo" href="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(2).jpeg" aria-label="Tarım Kredi Sivas Bölge Birliği Müdürlüğü 1"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(2).jpeg" alt="Tarım Kredi Sivas Bölge Birliği Müdürlüğü 1"></a></div>
    </article>
    <article class="reference-card">
-    <a class="reference-cover" href="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(3).jpeg" target="_blank"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(3).jpeg" alt="Sivas Villa ve Konut Projeleri"></a>
+    <a class="reference-cover project-photo" href="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(3).jpeg"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(3).jpeg" alt="Sivas Villa ve Konut Projeleri"></a>
     <div class="reference-info"><small>Sivas / Villa Şantiyeleri</small><h3>Villa &amp; Konut Projeleri</h3><p>Şantiye ve altyapı uygulamalarından görüntüler.</p></div>
-    <div class="gallery"><a href="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(3).jpeg" target="_blank" aria-label="Sivas Villa ve Konut Projeleri 1"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(3).jpeg" alt="Sivas Villa ve Konut Projeleri 1"></a><a href="WhatsApp%20Image%202026-09-28%20at%2021.58.55.jpeg" target="_blank" aria-label="Sivas Villa ve Konut Projeleri 2"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.55.jpeg" alt="Sivas Villa ve Konut Projeleri 2"></a><a href="WhatsApp%20Image%202026-09-28%20at%2021.59.35%20(1).jpeg" target="_blank" aria-label="Sivas Villa ve Konut Projeleri 3"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.59.35%20(1).jpeg" alt="Sivas Villa ve Konut Projeleri 3"></a></div>
+    <div class="gallery"><a class="project-photo" href="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(3).jpeg" aria-label="Sivas Villa ve Konut Projeleri 1"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.55%20(3).jpeg" alt="Sivas Villa ve Konut Projeleri 1"></a><a class="project-photo" href="WhatsApp%20Image%202026-09-28%20at%2021.58.55.jpeg" aria-label="Sivas Villa ve Konut Projeleri 2"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.58.55.jpeg" alt="Sivas Villa ve Konut Projeleri 2"></a><a class="project-photo" href="WhatsApp%20Image%202026-09-28%20at%2021.59.35%20(1).jpeg" aria-label="Sivas Villa ve Konut Projeleri 3"><img loading="lazy" src="WhatsApp%20Image%202026-09-28%20at%2021.59.35%20(1).jpeg" alt="Sivas Villa ve Konut Projeleri 3"></a></div>
    </article>
   </div>
  </div>
@@ -292,6 +292,19 @@ function sendMail(e){
  const body=`Ad Soyad / Firma: ${name}%0ATelefon: ${phone}%0AE-posta: ${email}%0A%0A${message}`;
  window.location.href=`mailto:aytekenerji@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
 }
+</script>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Proje fotoğrafı"><button class="lightbox-close" type="button" aria-label="Kapat">×</button><img src="" alt="Proje fotoğrafı"></div>
+<script>
+(function(){
+ const box=document.getElementById('lightbox'), img=box.querySelector('img');
+ document.querySelectorAll('.project-photo').forEach(function(a){
+  a.addEventListener('click',function(e){e.preventDefault();img.src=this.getAttribute('href');box.classList.add('open');document.body.style.overflow='hidden';});
+ });
+ function closeBox(){box.classList.remove('open');img.src='';document.body.style.overflow='';}
+ box.querySelector('.lightbox-close').addEventListener('click',closeBox);
+ box.addEventListener('click',function(e){if(e.target===box)closeBox();});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeBox();});
+})();
 </script>
 </body>
 </html>
