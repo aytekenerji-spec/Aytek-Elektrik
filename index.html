@@ -219,6 +219,27 @@ url('aytek-hero.jpg') center center/cover no-repeat}
  .hero-clean-actions{display:grid;grid-template-columns:1fr;gap:8px;width:min(330px,92%)}
  .hero-clean-actions .btn{padding:12px 14px;font-size:13px}
 }
+
+/* Corporate bottom hero actions */
+.hero.hero-clean{align-items:flex-end}
+.hero-clean-inner{padding-bottom:34px}
+.hero-clean-actions{display:flex;justify-content:center;align-items:stretch;gap:14px;max-width:none;width:100%}
+.hero-cta{height:66px;display:flex;align-items:center;gap:15px;padding:0 24px;border-radius:8px;font-weight:800;font-size:15px;letter-spacing:-.1px;box-shadow:0 8px 28px rgba(0,0,0,.22);transition:.2s}
+.hero-cta b{font-size:20px;margin-left:8px}
+.hero-cta-primary{background:#e30613;color:#fff;border:1px solid #f13a44}
+.hero-cta-dark{background:rgba(10,11,13,.88);color:#fff;border:1px solid rgba(255,255,255,.6)}
+.hero-cta-instagram{width:72px;justify-content:center;padding:0;background:rgba(10,11,13,.9);color:#fff;border:1px solid rgba(255,255,255,.6)}
+.cta-icon{font-size:23px;line-height:1}
+.instagram-mark{font-size:35px;font-family:Arial,sans-serif;font-weight:700;line-height:1}
+.hero-cta:hover{transform:translateY(-2px);filter:brightness(1.08)}
+@media(max-width:700px){
+ .hero-clean-inner{padding-bottom:18px}
+ .hero-clean-actions{grid-template-columns:1fr 1fr 54px;display:grid;width:100%;gap:6px}
+ .hero-cta{height:50px;padding:0 10px;font-size:11px;gap:6px;border-radius:6px}
+ .hero-cta b,.cta-icon{display:none}
+ .hero-cta-instagram{width:54px;padding:0}
+ .instagram-mark{font-size:29px}
+}
 </style>
 </head>
 <body>
@@ -236,9 +257,9 @@ url('aytek-hero.jpg') center center/cover no-repeat}
 <section class="hero hero-clean" id="anasayfa" aria-label="AYTEK ELEKTRİK">
  <div class="container hero-clean-inner">
   <div class="hero-clean-actions">
-   <a class="btn btn-red" href="#teklif">Projeniz İçin Teklif Alın</a>
-   <a class="btn hero-service-btn" href="#hizmetler">Hizmetlerimizi İnceleyin</a>
-   <a class="btn hero-instagram-btn" href="https://www.instagram.com/aytekelektirik/" target="_blank" rel="noopener noreferrer">Instagram @aytekelektirik</a>
+   <a class="hero-cta hero-cta-primary" href="#teklif"><span class="cta-icon">▤</span><span>Projeniz İçin Teklif Alın</span><b>→</b></a>
+   <a class="hero-cta hero-cta-dark" href="#hizmetler"><span class="cta-icon">⚙</span><span>Hizmetlerimizi İnceleyin</span><b>→</b></a>
+   <a class="hero-cta hero-cta-instagram" href="https://www.instagram.com/aytekelektirik/" target="_blank" rel="noopener noreferrer" aria-label="AYTEK ELEKTRİK Instagram"><span class="instagram-mark">◎</span></a>
   </div>
  </div>
 </section>
