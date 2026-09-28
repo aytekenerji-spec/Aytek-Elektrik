@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aytekenerji-spec.github.io/Aytek-Elektrik/sitemap.xml
