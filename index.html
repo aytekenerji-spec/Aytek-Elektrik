@@ -159,14 +159,24 @@ footer{background:#0c0d0f;color:#b9bdc3;padding:32px 0}
 @media(max-width:1050px){.experience-badge{right:10px;top:30px;width:135px;height:135px}.experience-badge b{font-size:48px}}
 @media(max-width:700px){.experience-badge{position:static;margin-top:28px;width:120px;height:120px}.experience-badge b{font-size:42px}.nav{height:82px}.logo{height:58px}}
 
-.hero-image-only{min-height:0;height:auto;aspect-ratio:16/6.25;background:url('aytek-hero.jpg') center center/cover no-repeat}
+.hero-image-only{min-height:0;height:auto;aspect-ratio:16/6.25;background:url('aytek-hero.jpg') center center/cover no-repeat;position:relative}
+.hero-live-actions{position:absolute;left:7.1%;bottom:17.5%;display:flex;gap:16px;z-index:3}
+.hero-live-btn{display:flex;align-items:center;justify-content:space-between;gap:28px;min-width:245px;padding:16px 22px;border-radius:4px;font-weight:800;font-size:16px;text-decoration:none}
+.hero-live-primary{background:#e30613;color:#fff}
+.hero-live-secondary{background:rgba(10,10,10,.48);color:#fff;border:1px solid rgba(255,255,255,.7)}
+.hero-live-btn:hover{transform:translateY(-1px)}
+
 .hero-image-only:after{display:none}
 .project-photo{cursor:zoom-in}
 .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:1000;display:none;align-items:center;justify-content:center;padding:24px}
 .lightbox.open{display:flex}
 .lightbox img{max-width:min(1200px,94vw);max-height:90vh;object-fit:contain;box-shadow:0 20px 60px rgba(0,0,0,.5)}
 .lightbox-close{position:absolute;right:24px;top:18px;border:0;background:transparent;color:#fff;font-size:42px;line-height:1;cursor:pointer}
-@media(max-width:700px){.hero-image-only{aspect-ratio:auto;height:430px;background-position:center center}}
+@media(max-width:700px){
+ .hero-image-only{aspect-ratio:16/6.25;height:auto;background-position:center center}
+ .hero-live-actions{left:7%;right:7%;bottom:7%;display:grid;grid-template-columns:1fr;gap:8px}
+ .hero-live-btn{min-width:0;padding:11px 14px;font-size:13px}
+}
 
 .project-labels{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px}
 .project-labels>div{padding:20px;background:#181a1e;border-left:3px solid var(--red)}
@@ -192,7 +202,12 @@ footer{background:#0c0d0f;color:#b9bdc3;padding:32px 0}
 </header>
 
 <main id="anasayfa">
-<section class="hero hero-image-only" aria-label="AYTEK ELEKTRİK - Enerjinin olduğu yerde AYTEK var"></section>
+<section class="hero hero-image-only" aria-label="AYTEK ELEKTRİK - Enerjinin olduğu yerde AYTEK var">
+  <div class="hero-live-actions" aria-label="Hızlı bağlantılar">
+    <a class="hero-live-btn hero-live-primary" href="#teklif">Projeniz İçin Teklif Alın <span>→</span></a>
+    <a class="hero-live-btn hero-live-secondary" href="#hizmetler">Hizmetlerimizi İnceleyin <span>→</span></a>
+  </div>
+</section>
 
 <section class="stats">
  <div class="container stats-grid">
